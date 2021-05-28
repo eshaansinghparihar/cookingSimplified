@@ -139,28 +139,32 @@ function CustomizedRecipeSuggestion({nutrientData}){
     const [id,setId]=useState(0);
     const [open, setOpen] = useState(false);
     const {maxCarbs,carbs,maxFat,fat,maxCalories,maxFibre,fibre,maxProtien,protien,maxSugar,sugar}=nutrientData;
-    var apiCustom="https:api.spoonacular.com/recipes/findByNutrients?apiKey=e9e6a253359c4dd7817554facd45dc50&number=40&maxCalories="+maxCalories;
+    var apiCustom="https://api.spoonacular.com/recipes/findByNutrients?apiKey=e9e6a253359c4dd7817554facd45dc50&number=40&maxCalories="+maxCalories;
+    var params=[];
     if(carbs)
     {
-        apiCustom=apiCustom+"&maxCarbs="+maxCarbs;
+        params.push("&maxCarbs="+maxCarbs);
     }
     if(fat)
     {
-        apiCustom=apiCustom+"&maxFat="+maxFat;    
+        params.push("&maxFat="+maxFat);    
     }
     if(fibre)
     {
-        apiCustom=apiCustom+"&maxFibre="+maxFibre; 
+        params.push("&maxFibre="+maxFibre); 
     }
     if(protien)
     {
-        apiCustom=apiCustom+"&maxProtien="+maxProtien;
+        params.push("&maxProtien="+maxProtien);
     }
     if(sugar)
     {
-        apiCustom=apiCustom+"&maxSugar="+maxSugar;
+        params.push("&maxSugar="+maxSugar);
     }
-    useEffect(()=>{
+    params.forEach((param)=>{
+        apiCustom+=param;
+    });
+        useEffect(()=>{
         fetch(apiCustom)
             .then(response => response.json())
             .then(recipedata=> {
