@@ -176,7 +176,6 @@ function CustomizedRecipeSuggestion({nutrientData}){
         setOpen(true);
     };
     const recipeListRenderer=recipeList.map((recipeElem)=>{
-        console.log(recipeElem)
         return(
             <Grid item xs={12} sm={6} md={4} key={recipeElem.id} className={classes.recipeItem}>
             <Paper
