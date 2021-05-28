@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
     avatar: {
         margin: theme.spacing(1),
         backgroundColor: '#fff',
-        fontSize:'30px',
+        fontSize:'28px',
         width:'45vh',
         height:'40vh',
         marginLeft:'auto',

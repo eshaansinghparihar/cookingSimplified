@@ -42,7 +42,7 @@ function Loading() {
   useEffect(() => {
     setTimeout(
         () => setLoading(false), 
-        8000
+        12000
       );
    },[]);
   let history = useHistory();
