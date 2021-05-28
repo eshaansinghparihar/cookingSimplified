@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
         top: 0,
         left: 0,
         width: '100vw',
-        height: '1000%',
+        height: '1500%',
         backdropFilter: "blur(4px)",
         backgroundColor:'rgba(0,0,30,0.4)'
     },
