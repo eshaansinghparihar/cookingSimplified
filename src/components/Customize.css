@@ -1,0 +1,108 @@
+.search{
+width: 90%;
+/* padding: 2rem; */
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+.slidecontainer {
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
+
+}
+
+.slider {
+-webkit-appearance: none;
+width: 100%;
+height: 15px;
+border-radius: 5px;  
+background: #fff;
+outline: none;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
+border-radius: 20px;
+border: 0.5px solid black;
+/* box-shadow: 8px 8px 8px #c9c5c5; */
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 25px;
+height: 25px;
+border-radius: 50%; 
+background: black;
+cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+width: 25px;
+height: 25px;
+border-radius: 50%;
+background: black;
+cursor: pointer;
+}
+.Button{
+    border: 0.5px solid black;
+    border-radius: 20px;
+    /* box-shadow: 8px 8px 8px #c9c5c5; */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 1rem;
+    width: 15%;
+    margin:0.5rem;
+    font-weight: 800;
+    background-color: #0f0f0f; 
+    color: white;
+  }
+  .Button:hover {
+    background-color: black;
+    color: white;
+  }
+  .Buttonrow{
+    border: 0.5px solid black;
+    border-radius: 20px;
+    /* box-shadow: 8px 8px 8px #c9c5c5; */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 1rem;
+    /* width: 15%; */
+    margin:0.5rem;
+    font-weight: 800;
+    background-color: #0f0f0f; 
+    color: white;
+    
+  }
+  .Buttonrownav{
+    /* border: 0.5px solid black; */
+    border-radius: 20px;
+    /* box-shadow: 8px 8px 8px #c9c5c5; */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 1rem;
+    /* width: 15%; */
+    margin:0.5rem;
+    font-weight: 800;
+    background-color: rgb(228, 69, 149); 
+    color: white;
+    
+  }
+  .Button:active { 
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 18px 1px rgba(0, 0, 0, 0.24);  
+  } 
+  .Buttonrow:active{
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 18px 1px rgba(0, 0, 0, 0.24);  
+  }
+  .Buttonrownav{
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 18px 1px rgba(0, 0, 0, 0.24);  
+  }
+  .pageHeading{
+    margin-bottom: 80px;
+  }
